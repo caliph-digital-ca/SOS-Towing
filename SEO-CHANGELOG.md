@@ -91,6 +91,14 @@ billing and free accident towing. Call (780) 280-5535 and get back on the road."
   "Roadside Assistance in Edmonton", "Cheap Towing in Edmonton".
 - Contact page was already fixed in #3 (title differs from H1 "Contact Us").
 
+### 10. Missing image alt text
+- Set alt text on 31 site assets in the Webflow asset library (logo, phone /
+  clock / feature icons, photos, Google reviews badge, Edmonton skyline).
+  Asset alt text applies wherever the image is used, including the shared
+  navbar/footer, so it covers every page.
+- Set alt text on each Services CMS item's `image` and `icon` fields
+  (7 services, 14 images).
+
 ## Open issues (not yet changed)
 - The street address is not shown anywhere visibly on the site (e.g. footer or Contact page).
 - St. Albert slug is `st-albert2`.
