@@ -99,6 +99,20 @@ billing and free accident towing. Call (780) 280-5535 and get back on the road."
 - Set alt text on each Services CMS item's `image` and `icon` fields
   (7 services, 14 images).
 
+### 11. Image too big
+Originals were 1920px JPEGs of 1.4–3.5 MB. Resized, stripped metadata, and
+converted to WebP; all replacements are under 100 KB:
+| Where | Before | After |
+|---|---|---|
+| Emergency Towing CMS photo | 1.8 MB | 90 KB (1200px) |
+| Roadside Assistance CMS photo | 3.5 MB | 62 KB (1000px) |
+| Parking Enforcement CMS photo | 1.4 MB | 48 KB (1200px) |
+| Services template "Image 8" (all service pages) | 3.5 MB | 62 KB (swapped to the 1000px asset) |
+
+Also compressed in place to WebP via Webflow (same asset ID, used elsewhere):
+tow-truck-loading photo 1.8 MB → 208 KB, snowstorm accident photo 1.6 MB → 139 KB,
+damaged-car photo 3.5 MB → 462 KB (no longer used on service pages).
+
 ## Open issues (not yet changed)
 - The street address is not shown anywhere visibly on the site (e.g. footer or Contact page).
 - St. Albert slug is `st-albert2`.
