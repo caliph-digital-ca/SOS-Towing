@@ -76,6 +76,13 @@ assistance available 24/7 across Edmonton and surrounding areas."
 Now (150): "Fast 24/7 car towing in Edmonton at reasonable rates. Direct insurance
 billing and free accident towing. Call (780) 280-5535 and get back on the road."
 
+### 8. Multiple H1 tags
+- Locations template: the hero heading "Towing Services in {City}" was built
+  from two H1 elements. "Towing Services in" changed to H2 (same `h1-main`
+  class, so it looks the same); the CMS-bound city name stays the single H1.
+- Blog post template: a second heading (class `h2-main`) was tagged H1;
+  changed to H2. Article bodies contain no H1s.
+
 ## Open issues (not yet changed)
 - The street address is not shown anywhere visibly on the site (e.g. footer or Contact page).
 - St. Albert slug is `st-albert2`.
