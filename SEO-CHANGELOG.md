@@ -57,9 +57,12 @@ Shortened to 138–157 characters:
   Leduc (141), Devon (141), Stony Plain (153)
 - Fort Saskatchewan (139): "...in Fort Saskatchewan. Emergency response, accident recovery, and towing across the area."
 
+### 5. Location page content fixes
+- Phone number on all 8 location pages corrected from (780) 720-5535 to (780) 280-5535.
+- Fort Saskatchewan page body said "residents and businesses of Leduc"; corrected to Fort Saskatchewan.
+
 ## Open issues (not yet changed)
-- Location pages say "Call us now at (780) 720-5535"; the rest of the site uses (780) 280-5535.
-- Fort Saskatchewan page body says "residents and businesses of Leduc".
+- Service areas not yet checked against the Google Business Profile.
 - The "Devon" location item uses the slug `beaumont` (/location/beaumont).
 - St. Albert slug is `st-albert2`.
 - Roadside Assistance service slug is misspelled: `roadside-assitance`.
