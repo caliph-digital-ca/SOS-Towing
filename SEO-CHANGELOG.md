@@ -83,6 +83,14 @@ billing and free accident towing. Call (780) 280-5535 and get back on the road."
 - Blog post template: a second heading (class `h2-main`) was tagged H1;
   changed to H2. Article bodies contain no H1s.
 
+### 9. Identical title and H1
+- Services and Blog post templates: SEO title was bound to the same `h1`
+  field as the on-page H1. Title is now `{h1} | SOS Towing`, e.g.
+  "Emergency Towing Services in Edmonton | SOS Towing".
+- Blog `h1` fields were lowercase keywords; capitalized:
+  "Roadside Assistance in Edmonton", "Cheap Towing in Edmonton".
+- Contact page was already fixed in #3 (title differs from H1 "Contact Us").
+
 ## Open issues (not yet changed)
 - The street address is not shown anywhere visibly on the site (e.g. footer or Contact page).
 - St. Albert slug is `st-albert2`.
