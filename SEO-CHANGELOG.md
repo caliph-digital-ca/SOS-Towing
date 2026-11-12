@@ -70,6 +70,12 @@ GBP: 10742 81 Ave NW, Edmonton, AB T6E 1Y2 · (780) 280-5535 · open 24 hours, e
   based on the GBP description. No review/rating markup (Google ignores
   self-served ratings for local businesses).
 
+### 7. Home page meta description (from GBP description)
+Was: "Stranded on the road? We're here to help! Professional towing and roadside
+assistance available 24/7 across Edmonton and surrounding areas."
+Now (150): "Fast 24/7 car towing in Edmonton at reasonable rates. Direct insurance
+billing and free accident towing. Call (780) 280-5535 and get back on the road."
+
 ## Open issues (not yet changed)
 - The street address is not shown anywhere visibly on the site (e.g. footer or Contact page).
 - St. Albert slug is `st-albert2`.
