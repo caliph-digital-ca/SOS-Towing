@@ -61,8 +61,16 @@ Shortened to 138–157 characters:
 - Phone number on all 8 location pages corrected from (780) 720-5535 to (780) 280-5535.
 - Fort Saskatchewan page body said "residents and businesses of Leduc"; corrected to Fort Saskatchewan.
 
+### 6. Aligned with Google Business Profile
+GBP: 10742 81 Ave NW, Edmonton, AB T6E 1Y2 · (780) 280-5535 · open 24 hours, every day · service area includes Beaumont.
+- The location page at /location/beaumont was written for Devon. Renamed the CMS item to
+  Beaumont and rewrote its description and body for Beaumont (URL unchanged).
+- Added `AutomotiveBusiness` JSON-LD to the Home page: name, address, phone,
+  24/7 opening hours, service areas (the 8 location pages), and a description
+  based on the GBP description. No review/rating markup (Google ignores
+  self-served ratings for local businesses).
+
 ## Open issues (not yet changed)
-- Service areas not yet checked against the Google Business Profile.
-- The "Devon" location item uses the slug `beaumont` (/location/beaumont).
+- The street address is not shown anywhere visibly on the site (e.g. footer or Contact page).
 - St. Albert slug is `st-albert2`.
 - Roadside Assistance service slug is misspelled: `roadside-assitance`.
