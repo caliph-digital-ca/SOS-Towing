@@ -142,20 +142,28 @@ and the business facts listed under "Waiting on owner input".
 - Whether to show the GBP address (10742 81 Ave NW, Edmonton, AB T6E 1Y2) in the footer and Contact page.
 - Optional pricing line near "Get a Free Estimate".
 
-### Found, not fixed (report only)
-- Services template shows the wrong phone number **(780) 720-5535** in 3 places (two "CALL NOW" texts and a quote paragraph) and one tel: link uses it.
-- Services template heading typo "Affrodable".
-- Parking Enforcement CMS body: "dispose of the the unclaimed vehicle" and an invisible character before "Storage fee".
-- Home page mobile `call-mobile` instance links to URL `7802805535` (relative URL, not tel:) — broken on the home page only.
-- Home hero "Get A Free Estimate" button has no link.
-- `section-form` component "Average Response Time" card links to `#`.
-- Footer "Website Powered By Caliph Digital" links to `caliphdigital.ca` without `https://` (resolves as a relative path → 404).
-- St. Albert location slug is `st-albert2`.
-- Blog "Roadside Assistance in Edmonton" says response is 30–60 min; the rest of the site says 15 min average.
-- Blog featured images have no alt text.
+### Second batch (staged)
+| Issue | Where it lives | Change |
+|---|---|---|
+| Wrong phone (780) 720-5535 | Services template (all service pages) | Two "CALL NOW" labels and the quote paragraph now say (780) 280-5535; the call button that dialed 720 now dials 7802805535 |
+| "Affrodable" | Services template heading | "Affordable" |
+| Mobile call bar linked to URL `7802805535` | Home page `call-mobile` instance (prop override) | Now a phone (tel:) link to 7802805535 |
+| Hero "Get A Free Estimate" had no link | Home page | Links to `#free-estimate`; added DOM id `free-estimate` to the `section-form` component root |
+| "Average Response Time" card linked to `#` | `section-form` component, Link 3 prop default | Now a phone link to 7802805535, matching the other two cards |
+| Footer credit link `caliphdigital.ca` (relative) | `footer` component | `https://caliphdigital.ca`, opens in new tab |
+| "the the" + hidden U+2060 character | Parking Enforcement CMS item body | Removed both |
+| St. Albert slug `st-albert2` | Locations CMS item | Now `st-albert` (CMS-bound links update automatically) |
+| Blog said 30–60 min response | Roadside Assistance blog post body (2 places) | Now states SOS Towing's ~15-minute average, with the weather/demand caveat kept |
+| Blog image alt text missing | Blogs CMS | Cheap Towing post: "Flatbed tow truck picking up a Chevy Cruze beside a highway". Roadside post image still has no alt (image could not be viewed from the work environment; needs a description from the owner) |
+
+### Must do by hand before publishing (updated)
+- 301 redirect `/location/st-albert2` → `/location/st-albert`
+
+### Still open (report only)
+- Roadside Assistance blog featured image has no alt text (needs someone who can see the image).
 - Reviews heading in `section-reviews` says "Join Hundreds of Satisfied Customers" while the badge says 200+ five-star reviews; align once the customer figure is known.
 
 ## Open issues (not yet changed)
 - The street address is not shown anywhere visibly on the site (e.g. footer or Contact page).
-- St. Albert slug is `st-albert2`.
+- St. Albert slug is `st-albert2`. (Fixed 2026-11-13, staged; needs 301 redirect.)
 - Roadside Assistance service slug is misspelled: `roadside-assitance`. (Fixed 2026-11-13, staged; needs 301 redirect.)
