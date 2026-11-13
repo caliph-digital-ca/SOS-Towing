@@ -113,7 +113,49 @@ Also compressed in place to WebP via Webflow (same asset ID, used elsewhere):
 tow-truck-loading photo 1.8 MB → 208 KB, snowstorm accident photo 1.6 MB → 139 KB,
 damaged-car photo 3.5 MB → 462 KB (no longer used on service pages).
 
+## 2026-11-13 — Trust & consistency pass (STAGED, NOT PUBLISHED)
+
+Changes below are saved in Webflow but not published. Awaiting owner approval
+and the business facts listed under "Waiting on owner input".
+
+### Done (staged)
+| Issue | Where it lives | Change |
+|---|---|---|
+| Nav "Reviews" pointed to staging `https://sostowing.webflow.io#reviews` | `nav` component (all 8 pages) | Now `/#reviews` |
+| Reviews section anchor | `section-reviews` component | Already had DOM id `reviews`; no change. Section holds an Elfsight Google Reviews widget embed. |
+| Other `webflow.io` links | Searched all pages, components, CMS, site/page custom code, JSON-LD | None found |
+| "Roadside Assitance" typo + slug | Services CMS item (feeds nav dropdown, footer list, homepage/About service cards) | Name → "Roadside Assistance"; slug `roadside-assitance` → `roadside-assistance`. Internal links are CMS-bound and update automatically. |
+| Footer logo + quick links pointed to `#` | `footer` component (all 8 pages) | Logo → `/`, About Us → `/about`, Services → `/#services`, Service Areas → `/#service-areas`, Reviews → `/#reviews` |
+| Missing anchor ids | Home page services section; `section-home-locations` component | Added DOM ids `services` and `service-areas` |
+
+### Must do by hand before publishing
+- Webflow Site settings → Publishing → 301 redirects: `/services/roadside-assitance` → `/services/roadside-assistance`
+  (the Webflow API/MCP has no redirect endpoint).
+
+### Waiting on owner input
+- Years in business: site currently says "Over 10 Years" (home/Start heading + paragraph), "13+ Years" (stat on Home, About,
+  Start, Locations template), "15+ Years Experience" (`section-call` component, 6 pages), and "Since 2010" / "founded in 2010"
+  (About, Services template, Blog, Locations template).
+- Customer stat "500+ Customers" (Home, About, Start, Services template, Locations template).
+- Business email to replace sostowinc@gmail.com (footer component, Contact page); footer email to become a mailto: link.
+- Social URLs (Facebook / LinkedIn / X) for the 3 footer icons, all currently `#`.
+- Whether to show the GBP address (10742 81 Ave NW, Edmonton, AB T6E 1Y2) in the footer and Contact page.
+- Optional pricing line near "Get a Free Estimate".
+
+### Found, not fixed (report only)
+- Services template shows the wrong phone number **(780) 720-5535** in 3 places (two "CALL NOW" texts and a quote paragraph) and one tel: link uses it.
+- Services template heading typo "Affrodable".
+- Parking Enforcement CMS body: "dispose of the the unclaimed vehicle" and an invisible character before "Storage fee".
+- Home page mobile `call-mobile` instance links to URL `7802805535` (relative URL, not tel:) — broken on the home page only.
+- Home hero "Get A Free Estimate" button has no link.
+- `section-form` component "Average Response Time" card links to `#`.
+- Footer "Website Powered By Caliph Digital" links to `caliphdigital.ca` without `https://` (resolves as a relative path → 404).
+- St. Albert location slug is `st-albert2`.
+- Blog "Roadside Assistance in Edmonton" says response is 30–60 min; the rest of the site says 15 min average.
+- Blog featured images have no alt text.
+- Reviews heading in `section-reviews` says "Join Hundreds of Satisfied Customers" while the badge says 200+ five-star reviews; align once the customer figure is known.
+
 ## Open issues (not yet changed)
 - The street address is not shown anywhere visibly on the site (e.g. footer or Contact page).
 - St. Albert slug is `st-albert2`.
-- Roadside Assistance service slug is misspelled: `roadside-assitance`.
+- Roadside Assistance service slug is misspelled: `roadside-assitance`. (Fixed 2026-11-13, staged; needs 301 redirect.)
