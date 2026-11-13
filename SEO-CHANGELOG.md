@@ -128,11 +128,11 @@ and the business facts listed under "Waiting on owner input".
 | Footer logo + quick links pointed to `#` | `footer` component (all 8 pages) | Logo → `/`, About Us → `/about`, Services → `/#services`, Service Areas → `/#service-areas`, Reviews → `/#reviews` |
 | Missing anchor ids | Home page services section; `section-home-locations` component | Added DOM ids `services` and `service-areas` |
 
-### Must do by hand before publishing
-- Webflow Site settings → Publishing → 301 redirects: `/services/roadside-assitance` → `/services/roadside-assistance`
-  (the Webflow API/MCP has no redirect endpoint).
+### 301 redirects (added by owner in Site settings, 2026-11-13)
+- `/services/roadside-assitance` → `/services/roadside-assistance`
 
 ### Waiting on owner input
+- Google Business Profile could not be read from the cloud work environment (Google returns a CAPTCHA), so these are still open.
 - Years in business: site currently says "Over 10 Years" (home/Start heading + paragraph), "13+ Years" (stat on Home, About,
   Start, Locations template), "15+ Years Experience" (`section-call` component, 6 pages), and "Since 2010" / "founded in 2010"
   (About, Services template, Blog, Locations template).
@@ -154,13 +154,12 @@ and the business facts listed under "Waiting on owner input".
 | "the the" + hidden U+2060 character | Parking Enforcement CMS item body | Removed both |
 | St. Albert slug `st-albert2` | Locations CMS item | Now `st-albert` (CMS-bound links update automatically) |
 | Blog said 30–60 min response | Roadside Assistance blog post body (2 places) | Now states SOS Towing's ~15-minute average, with the weather/demand caveat kept |
-| Blog image alt text missing | Blogs CMS | Cheap Towing post: "Flatbed tow truck picking up a Chevy Cruze beside a highway". Roadside post image still has no alt (image could not be viewed from the work environment; needs a description from the owner) |
+| Blog image alt text missing | Blogs CMS | Cheap Towing post: "Flatbed tow truck picking up a Chevy Cruze beside a highway". Roadside post: "Tow truck hooking up a damaged car on a snowy roadside in winter" |
 
-### Must do by hand before publishing (updated)
-- 301 redirect `/location/st-albert2` → `/location/st-albert`
+### 301 redirects (added by owner, 2026-11-13)
+- `/location/st-albert2` → `/location/st-albert`
 
 ### Still open (report only)
-- Roadside Assistance blog featured image has no alt text (needs someone who can see the image).
 - Reviews heading in `section-reviews` says "Join Hundreds of Satisfied Customers" while the badge says 200+ five-star reviews; align once the customer figure is known.
 
 ## Open issues (not yet changed)
