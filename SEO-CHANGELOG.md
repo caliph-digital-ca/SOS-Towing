@@ -162,7 +162,7 @@ and the business facts listed under "Waiting on owner input".
 ### Still open (report only)
 - Reviews heading in `section-reviews` says "Join Hundreds of Satisfied Customers" while the badge says 200+ five-star reviews; align once the customer figure is known.
 
-## 2026-11-19 — New blog post (DRAFT, NOT PUBLISHED)
+## 2026-11-19 — New blog posts 1 and 2 (PUBLISHED 2026-11-19)
 
 ### "How Much Does Towing Cost in Edmonton? (2026 Price Guide)" (Post 1 of 4)
 Blogs CMS item `6aff252bb7ad248f736568e1`, saved as a **draft**. It stays
@@ -218,6 +218,31 @@ Notes:
 - Post 2 "Related reading" now links "How Much Does Towing Cost in Edmonton?" to `/blog/towing-cost-edmonton`.
 - Both posts are drafts, so each link 404s until both posts are published. Publish them together.
 - "Is Accident Towing Free in Edmonton?" and "Stuck in Snow or a Ditch?" stay plain text until Posts 3 and 4 exist.
+
+### Published Posts 1 and 2 (2026-11-19)
+Both CMS items published (item publish, not a full site publish):
+- https://www.sostowing.ca/blog/towing-cost-edmonton
+- https://www.sostowing.ca/blog/car-wont-start-cold-edmonton
+
+Before publishing, I checked the prices against the site. No tow, boost or battery prices are published
+anywhere I could check (Services CMS items list none; only parking-enforcement storage of $60/day), and
+pricing is still waiting on owner input. So every price was removed rather than guessed:
+- Post 1: the price table became "How SOS Towing Prices Each Service" (how each service is priced, no amounts);
+  quick answer, FAQ and takeaways describe hook-up fee + per-km pricing without figures. Removed the night/weekend
+  surcharge FAQ and the payment-methods FAQ (no confirmed policy). Removed the "Time of day and weather" H3.
+  Meta description changed to: "How towing is priced in Edmonton: hook-up fees, per-km rates, flatbed and
+  winch-outs. Free accident towing with direct insurance billing. Call (780) 280-5535." (158)
+- Post 2: removed prices and the "[X] years" battery age ("several years old" instead); battery-cost FAQs now
+  point to a phone quote. Removed the battery-size, warranty and boost-credit details (no confirmed policy).
+  Meta description changed to: "Car won't start in the cold? Learn if you need a boost, a new battery or a tow
+  in Edmonton. 24/7 mobile battery service. Call (780) 280-5535." (141)
+- Both: removed the author byline, "What We See..." first-hand sections, photo placeholders, owner notes, and the
+  related-reading placeholders for Posts 3 and 4. Posts 1 and 2 still link to each other.
+- Kept only facts the site already states: free accident towing with direct insurance billing, 24/7 service,
+  15-minute average response, on-site battery testing and replacement.
+
+To add later (improves E-E-A-T): real prices, author byline, first-hand paragraphs and job photos, and
+Article/FAQPage schema.
 
 ## Open issues (not yet changed)
 - The street address is not shown anywhere visibly on the site (e.g. footer or Contact page).
