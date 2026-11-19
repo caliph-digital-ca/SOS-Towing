@@ -192,6 +192,33 @@ Notes:
 - Not done: Article and FAQPage JSON-LD. The Blog template has no per-post schema field; this needs a template
   custom-code embed bound to CMS fields, or schema added per post once it's final.
 
+### "Car Won't Start in the Cold? Boost, Battery Replacement or Tow" (Post 2 of 4)
+Blogs CMS item `6aff26c5364e1bdcb473152c`, saved as a **draft** (not on the live site).
+
+| Field | Value |
+|---|---|
+| Name / H1 | Car Won't Start in the Cold? Boost, Battery Replacement or Tow |
+| Slug | `car-wont-start-cold-edmonton` → `/blog/car-wont-start-cold-edmonton` |
+| Meta description (154) | Car won't start in the cold? Learn if you need a boost, a new battery or a tow, and what each costs in Edmonton. 24/7 mobile service. Call (780) 280-5535. |
+| Feature image | New asset `car-wont-start-cold-battery-replacement-640.webp` (640px WebP, 23 KB), from the stock battery photo already used on the Battery Replacement service page |
+| Image alt | Technician lifting a new car battery into place under an open hood |
+
+Notes:
+- Page title from the template: "Car Won't Start in the Cold? Boost, Battery Replacement or Tow | SOS Towing"
+  (75 characters). The draft's meta title ("Car Won't Start in Edmonton Cold? Boost, Battery or Tow") needs its own template field.
+- The only battery photo on the site is 640px wide, which is low resolution for a feature image. Replace it with a
+  real job photo (battery test in a snowy driveway) at 1200px or wider, then use the draft's alt text.
+- The symptom table is a bulleted list (Webflow rich text has no tables).
+- Placeholders kept as in the draft: boost price, replacement price range, battery age, warranty, boost-fee credit,
+  battery sizes, replacement time, byline, first-hand paragraph and 2 photos.
+- Not done: Article and FAQPage JSON-LD (same reason as Post 1).
+
+### Related-reading links between Posts 1 and 2
+- Post 1 "Related reading" now links "Car Won't Start in the Cold?" to `/blog/car-wont-start-cold-edmonton`.
+- Post 2 "Related reading" now links "How Much Does Towing Cost in Edmonton?" to `/blog/towing-cost-edmonton`.
+- Both posts are drafts, so each link 404s until both posts are published. Publish them together.
+- "Is Accident Towing Free in Edmonton?" and "Stuck in Snow or a Ditch?" stay plain text until Posts 3 and 4 exist.
+
 ## Open issues (not yet changed)
 - The street address is not shown anywhere visibly on the site (e.g. footer or Contact page).
 - St. Albert slug is `st-albert2`. (Fixed 2026-11-13, staged; needs 301 redirect.)
