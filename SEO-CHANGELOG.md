@@ -162,6 +162,36 @@ and the business facts listed under "Waiting on owner input".
 ### Still open (report only)
 - Reviews heading in `section-reviews` says "Join Hundreds of Satisfied Customers" while the badge says 200+ five-star reviews; align once the customer figure is known.
 
+## 2026-11-19 — New blog post (DRAFT, NOT PUBLISHED)
+
+### "How Much Does Towing Cost in Edmonton? (2026 Price Guide)" (Post 1 of 4)
+Blogs CMS item `6aff252bb7ad248f736568e1`, saved as a **draft**. It stays
+off the live site, even on a full site publish, until it is switched to
+published in Webflow.
+
+| Field | Value |
+|---|---|
+| Name / H1 | How Much Does Towing Cost in Edmonton? (2026 Price Guide) |
+| Slug | `towing-cost-edmonton` → `/blog/towing-cost-edmonton` |
+| Meta description (156) | 2026 towing prices in Edmonton: hook-up fees, per-km rates, flatbed and winch-outs. Free accident towing with direct insurance billing. Call (780) 280-5535. |
+| Feature image | New asset `towing-cost-edmonton-flatbed-sedan-1200.webp` (1200px WebP, 99 KB), resized from the existing stock photo of an operator loading a sedan onto a flatbed |
+| Image alt | Tow truck operator strapping a dark sedan onto a flatbed tow truck |
+
+Notes:
+- The meta description in the draft was 161 characters; "Real" was dropped from the start to fit the 160 limit.
+- Meta title: the Blog template builds the title as `{h1} | SOS Towing`, so the title is
+  "How Much Does Towing Cost in Edmonton? (2026 Price Guide) | SOS Towing" (70 characters).
+  The draft's meta title ("How Much Does Towing Cost in Edmonton? 2026 Prices") would need its own template field.
+- The feature image alt text describes the photo itself. The draft's alt text ("...on an Edmonton street at dusk")
+  doesn't match this stock photo; use it once a real SOS job photo replaces the image.
+- Webflow rich text has no tables, so the price table is a bulleted list.
+- The body contains the draft's placeholders as-is (`[price range]`, `[rate per km]`, `[X] km`, the author byline,
+  the night/weekend surcharge policy, accident-towing conditions, payment methods, the first-hand
+  "What We See on Edmonton Roads" paragraph and 2 job photos). Fill these before publishing.
+- "Related reading" titles are plain text until those posts exist.
+- Not done: Article and FAQPage JSON-LD. The Blog template has no per-post schema field; this needs a template
+  custom-code embed bound to CMS fields, or schema added per post once it's final.
+
 ## Open issues (not yet changed)
 - The street address is not shown anywhere visibly on the site (e.g. footer or Contact page).
 - St. Albert slug is `st-albert2`. (Fixed 2026-11-13, staged; needs 301 redirect.)
