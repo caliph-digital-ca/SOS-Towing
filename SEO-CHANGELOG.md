@@ -244,6 +244,25 @@ pricing is still waiting on owner input. So every price was removed rather than 
 To add later (improves E-E-A-T): real prices, author byline, first-hand paragraphs and job photos, and
 Article/FAQPage schema.
 
+## 2026-11-23 — 404 fixes (redirects to be added in Webflow UI)
+
+### 404s from old site URLs (301 redirects)
+Search Console reported 404s on URLs left over from the previous site. Each is
+mapped to the closest live page. The site is not on an Enterprise plan, so the
+Webflow API cannot create redirects; these are added by hand in
+Site settings → Publishing → 301 Redirects, then the site is republished.
+Webflow matches with or without the trailing slash, so one rule covers both.
+
+| Old path (404) | Redirect to | Why |
+|---|---|---|
+| `/towing-services` | `/services/emergency-towing` | No services index page exists; emergency towing is the core towing service |
+| `/towing-near-me-in-edmonton-fast-help-with-sos-towing` | `/location/edmonton` | "Towing near me in Edmonton" intent matches the Edmonton location page |
+| `/contact-us` | `/contact` | Renamed page |
+| `/about-us` | `/about` | Renamed page |
+
+After publishing, check each old URL returns 301 to its target, then use
+"Validate fix" on the 404 report in Search Console.
+
 ## Open issues (not yet changed)
 - The street address is not shown anywhere visibly on the site (e.g. footer or Contact page).
 - St. Albert slug is `st-albert2`. (Fixed 2026-11-13, staged; needs 301 redirect.)
