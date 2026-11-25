@@ -316,7 +316,9 @@ Same approach as Posts 1 and 2: anything the owner hasn't confirmed was removed 
 
 ### Internal links
 - Post 3 related reading links Posts 1 and 4; Post 4 links Posts 1, 2 and 3.
-- Not done: Posts 1 and 2 don't link to Posts 3 and 4 yet.
+- Posts 1 and 2 (updated and republished 2026-11-25): "Related reading" in both now links Posts 3 and 4.
+  Post 1's FAQ "Is accident towing really free?" also links to Post 3 ("how direct insurance billing works").
+  No other text changed.
 - Not done: Article and FAQPage JSON-LD (Blog template has no per-post schema field, same as Posts 1 and 2).
 
 To add later: real winch-out and non-covered accident-tow prices, storage fee policy, author bylines,
