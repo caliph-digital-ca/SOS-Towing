@@ -332,7 +332,7 @@ Blogs collection `6a4fbf6f5ab64cc8b8e1bb52`), not the SOS Towing site. They are 
 | Post | Slug | Status |
 |---|---|---|
 | How to Maintain Your Ceramic Coating: A Kelowna Owner's Guide | `/blog/ceramic-coating-maintenance` | Published 2026-11-25 |
-| Spray Ceramic vs Professional Ceramic Coating: What's the Real Difference? | `/blog/spray-ceramic-vs-professional-ceramic-coating` | Draft; scheduled to publish 2026-11-26, 9:00 PT |
+| Spray Ceramic vs Professional Ceramic Coating: What's the Real Difference? | `/blog/spray-ceramic-vs-professional-ceramic-coating` | Published 2026-11-25 (moved up from 2026-11-26 at owner's request) |
 
 ### Format
 Matches the existing Drew's posts: H1 + italic summary at the top of the Article rich text, internal links
@@ -363,7 +363,7 @@ to a pro kit), so existing site photos were used and the alt text describes them
 - Post 1 links the home wash guide, PPF vs Ceramic, the ceramic coating service and pricing, Kelowna and Vernon.
   Post 2 links Post 1, PPF vs Ceramic, paint correction, ceramic coating and pricing, and the location pages
   for Kelowna, Vernon, Summerland, Oliver and Osoyoos (all confirmed live).
-- Still to do on 2026-11-26 (scheduled): add Post 2 to Post 1's Related reading after Post 2 goes live.
+- Post 1's Related reading now also links Post 2 (republished 2026-11-25).
 
 ### Not done
 - Meta title and description: the Drew's Blogs collection has no SEO fields, so the template sets these.
