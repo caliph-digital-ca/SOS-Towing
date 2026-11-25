@@ -324,6 +324,53 @@ Same approach as Posts 1 and 2: anything the owner hasn't confirmed was removed 
 To add later: real winch-out and non-covered accident-tow prices, storage fee policy, author bylines,
 first-hand paragraphs and job photos.
 
+## 2026-11-25 — Drew's Autosports: ceramic coating blog posts
+
+Note: these changes are on a different Webflow site, Drew's Autosports (site ID `6a29afc4bb1347dad843ffac`,
+Blogs collection `6a4fbf6f5ab64cc8b8e1bb52`), not the SOS Towing site. They are logged here as requested.
+
+| Post | Slug | Status |
+|---|---|---|
+| How to Maintain Your Ceramic Coating: A Kelowna Owner's Guide | `/blog/ceramic-coating-maintenance` | Published 2026-11-25 |
+| Spray Ceramic vs Professional Ceramic Coating: What's the Real Difference? | `/blog/spray-ceramic-vs-professional-ceramic-coating` | Draft; scheduled to publish 2026-11-26, 9:00 PT |
+
+### Format
+Matches the existing Drew's posts: H1 + italic summary at the top of the Article rich text, internal links
+relative, external links open in a new tab, CTA block with quote link, phone, address and hours.
+Tables (care schedule, spray vs pro comparison) became bold-label lists, since Webflow rich text has no tables.
+
+### Facts filled from Drew's own site (Webflow CMS)
+- "Certified in ceramic coating for over 8 years" (Ceramic Coating service description) was added to Post 2.
+- Warranty range (2 years Bronze to lifetime Gold), CarFax registration, full address with postal code:
+  as already published on the site and earlier posts.
+
+### Removed (not confirmed, per owner instruction to skip unknowns)
+- Author bylines and dates, both "first-hand" notes and photo placeholders, the "Before Publishing" checklists.
+- Post 1: "[confirm cure guidance]" note (the first-week rules are kept as written in the draft), "[confirm if
+  required for warranty]" on the 12-month inspection, and the FAQs "When can I wash my car after a ceramic
+  coating?" and "Does my coating warranty require maintenance?".
+- Post 2: the whole "What We See When Customers Try DIY" section (it was only a placeholder), the starting
+  price in the comparison (now "higher"), and the cost FAQ now points to packages and a free quote instead of a price.
+
+### Images
+The drafts' alt text described photos that don't exist yet (beading on a black Porsche hood; spray bottle next
+to a pro kit), so existing site photos were used and the alt text describes them:
+- Post 1: black Chevrolet Silverado in the Drew's coating studio. This is the same photo as the PPF vs
+  Ceramic post's featured image.
+- Post 2: red sports car with its hood raised in a showroom.
+
+### Internal links
+- Post 1 links the home wash guide, PPF vs Ceramic, the ceramic coating service and pricing, Kelowna and Vernon.
+  Post 2 links Post 1, PPF vs Ceramic, paint correction, ceramic coating and pricing, and the location pages
+  for Kelowna, Vernon, Summerland, Oliver and Osoyoos (all confirmed live).
+- Still to do on 2026-11-26 (scheduled): add Post 2 to Post 1's Related reading after Post 2 goes live.
+
+### Not done
+- Meta title and description: the Drew's Blogs collection has no SEO fields, so the template sets these.
+  The drafts' meta titles and descriptions were not applied.
+- Article, HowTo and FAQPage JSON-LD: there is no per-post schema field.
+- The Drew's website and the GBP link could not be loaded from the cloud work environment.
+
 ## Open issues (not yet changed)
 - The street address is not shown anywhere visibly on the site (e.g. footer or Contact page).
 - St. Albert slug is `st-albert2`. (Fixed 2026-11-13, staged; needs 301 redirect.)
