@@ -263,6 +263,65 @@ Webflow matches with or without the trailing slash, so one rule covers both.
 After publishing, check each old URL returns 301 to its target, then use
 "Validate fix" on the 404 report in Search Console.
 
+## 2026-11-25 — New blog posts 3 and 4 (PUBLISHED 2026-11-25)
+
+Both created in the Blogs CMS and published (item publish, not a full site publish):
+- https://www.sostowing.ca/blog/free-accident-towing-edmonton
+- https://www.sostowing.ca/blog/car-winching-cost-edmonton
+
+### "Is Accident Towing Free in Edmonton? How Insurance Billing Works" (Post 3 of 4)
+| Field | Value |
+|---|---|
+| CMS item | `6b06f5510f8e3c5e8e273c55` |
+| Name / H1 | Is Accident Towing Free in Edmonton? How Insurance Billing Works |
+| Slug | `free-accident-towing-edmonton` |
+| Meta description (158) | After a collision in Edmonton, SOS Towing tows your vehicle free and bills your insurer directly. Learn how it works and what to do next. Call (780) 280-5535. |
+| Feature image | Existing asset `roadside-assistance-car-loaded-on-tow-truck-1000.webp` (1000px WebP, 62 KB) |
+| Image alt | Tow truck operator loading a silver car onto a flatbed tow truck |
+
+### "Stuck in Snow or a Ditch in Edmonton? Winch-Out Cost and What to Do" (Post 4 of 4)
+| Field | Value |
+|---|---|
+| CMS item | `6b06f5510f8e3c5e8e273c57` |
+| Name / H1 | Stuck in Snow or a Ditch in Edmonton? Winch-Out Cost and What to Do |
+| Slug | `car-winching-cost-edmonton` |
+| Meta description (154) | Stuck in snow, mud or a ditch in Edmonton? See what affects winch-out cost, how it differs from a tow and what to do while you wait. 24/7: (780) 280-5535. |
+| Feature image | New asset `car-winching-snowy-ditch-1200.webp` (1200px WebP, 52 KB), resized from the existing 1920px snowstorm stock photo |
+| Image alt | Tow truck on a snowy rural road near a dark SUV stuck in a roadside ditch |
+
+### What was changed from the drafts
+Same approach as Posts 1 and 2: anything the owner hasn't confirmed was removed rather than guessed.
+- Post 3 meta description was 171 characters; shortened to 158 ("at no cost to you" → "free").
+- Post 4 meta description said "See what a winch-out costs", but no price is published; now "See what affects winch-out cost".
+- Feature image alt text describes the stock photos actually used; the drafts' alt text needs real SOS job photos.
+- Tables (billing steps, winch-out vs tow) became lists, since Webflow rich text has no tables. The winch-out
+  list drops the price column.
+- Removed: author bylines, the "What We See..." first-hand sections and photo placeholders, owner notes,
+  "Before Publishing" checklists, and every placeholder answer.
+- Post 3 FAQs removed (no confirmed policy): basic-coverage pricing, storage fees after an accident tow,
+  shop referral payments. Removed "what happens when the other driver is at fault". "We do this every week"
+  became "We can do this for you". Billing step 3 says "invoice" (dropped "and photos").
+- Post 4: quick answer and cost FAQ point to a phone quote instead of a price range or recovery time. Removed
+  FAQs on insurance/roadside-plan coverage and on paying when a recovery fails; removed the rural travel fee.
+  Storm response FAQ keeps the 15-minute average and says times can be longer in heavy snow (no figure).
+- Kept: free accident towing with direct insurance billing (GBP and site), 24/7, 15-minute average response,
+  the EPS and AMA facts as cited in the drafts.
+
+### Not verified
+- The EPS ($5,000 threshold, $405 fine, tow to Collision Reporting Centre) and AMA pages could not be loaded
+  from the cloud work environment. The facts are as written in the drafts; recheck the EPS page, since the
+  threshold and fine can change.
+- The Post 4 damage section ("recovery points or soft straps, slow straight pull") is kept from the draft;
+  the owner should confirm it matches how operators work.
+
+### Internal links
+- Post 3 related reading links Posts 1 and 4; Post 4 links Posts 1, 2 and 3.
+- Not done: Posts 1 and 2 don't link to Posts 3 and 4 yet.
+- Not done: Article and FAQPage JSON-LD (Blog template has no per-post schema field, same as Posts 1 and 2).
+
+To add later: real winch-out and non-covered accident-tow prices, storage fee policy, author bylines,
+first-hand paragraphs and job photos.
+
 ## Open issues (not yet changed)
 - The street address is not shown anywhere visibly on the site (e.g. footer or Contact page).
 - St. Albert slug is `st-albert2`. (Fixed 2026-11-13, staged; needs 301 redirect.)
